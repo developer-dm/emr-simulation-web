@@ -1,0 +1,106 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: none;
+    max-height: none;
+    background-color: #ffffffd5;
+    margin: 0%;
+}
+
+.background {
+    width: 950px;
+    height: 440px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #0000004e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    margin: -5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+.divider {
+    width: 50%;
+    border-top: 1px solid #000000;
+    margin: 12px;
+}
+
+.buttonList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    background-color: #ffffff;
+    margin: 0%;
+}
+
+.buttonMain {
+    width: 200px;
+    padding: 12px;
+    margin: 12px;
+    background-color: #0081dd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.buttonMain:hover {
+    background-color: #005fa3;
+}
+
+.buttonSide {
+    width: 150px;
+    padding: 12px;
+    margin: 12px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.buttonSide:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.link {
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0077cc;
+}
+
+.link:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}

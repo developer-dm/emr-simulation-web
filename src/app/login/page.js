@@ -3,7 +3,7 @@
 import { auth } from "../../../firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { React, useState, useEffect } from 'react';
-import "./styles.css";
+import styles from "./login.module.css";
 
 const findWindowWidth = () => {
   const [width, setWidth] = useState(null);
@@ -51,32 +51,32 @@ export default function Home() {
   if (width === null) return null;
 
   return (
-    <div className="container">
-      <div className={width > 1050 ? "largeBackground" : "smallBackground"}>
-        <div className="loginSection">
-          <h1 className="title">EMR Simulation</h1>
-          <hr className="divider" />
-          <form className="form" onSubmit={handleLogin}>
+    <div className={styles.container}>
+      <div className={width > 1050 ? styles.largeBackground : styles.smallBackground}>
+        <div className={styles.loginSection}>
+          <h1 className={styles.title}>EHR Demo</h1>
+          <hr className={styles.divider} />
+          <form className={styles.form} onSubmit={handleLogin}>
             <input
-              className="input"
+              className={styles.input}
               type="email"
               placeholder="Email"
               value={email}
               onChange={e => setEmail(e.target.value)}
             />
             <input
-              className="input"
+              className={styles.input}
               type="password"
               placeholder="Password"
               value={password}
               onChange={e => setPassword(e.target.value)}
             />
-            <button type="submit" className="button">Log In</button>
+            <button type="submit" className={styles.button}>Log In</button>
           </form>
-          {error ? <p className="error">{error}</p> : null}
+          {error && <p className={styles.error}>{error}</p>}
         </div>
         {width > 1050 && (
-          <div className="infoSection">
+          <div className={styles.infoSection}>
 
           </div>
         )}

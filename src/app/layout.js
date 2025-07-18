@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "EMR Simulation",
-  description: "EMR Simulation",
+  title: "EHR Demo",
+  description: "EHR Demo",
 };
 
 export default function RootLayout({ children }) {
